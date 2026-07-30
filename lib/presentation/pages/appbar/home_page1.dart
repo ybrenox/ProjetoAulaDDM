@@ -6,23 +6,29 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 229, 82, 255),
+      backgroundColor: Colors.white,
       appBar: AppBar(
-        backgroundColor: Colors.deepPurple,
-        title: const Text('Meu App',
+        backgroundColor: Colors.blue,
+        title: const Text(
+          'MEU APP',
           style: TextStyle(
             color: Colors.white,
-            fontSize: 24,
+            fontSize: 20,
             fontWeight: FontWeight.bold,
           ),
         ),
       ),
       body: const Center(
-        child: Text("Olá Mundo",style: TextStyle(
-            color: Color.fromARGB(255, 124, 53, 123),
-            fontSize: 30,
-            fontWeight: FontWeight.bold,),
-      ),
+        child: Text(
+          'Olá, espero que esteja bem!',
+          style: TextStyle(
+            color: Colors.green,
+            fontSize: 40,
+            fontWeight: FontWeight.bold,
+            letterSpacing: 10,
+            wordSpacing: 20,
+          ),
+        ),
       ),
     );
   }

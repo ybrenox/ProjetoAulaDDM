@@ -1,0 +1,59 @@
+import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:projeto_aula/core/theme/colors.dart';
+
+//Classe Estática para armazenar os estilos de texto do aplicativo
+class TextStyles {
+  // Estilo para títulos grandes
+  static const TextStyle headlineLarge = TextStyle(
+    fontSize: 32,
+    fontWeight: FontWeight.bold,
+    color: AppColors.secondary,
+  );
+
+  // Estilo para títulos médios
+  static const TextStyle headlineMedium = TextStyle(
+    fontSize: 24,
+    fontWeight: FontWeight.bold,
+    color: AppColors.secondary,
+  );
+
+  // Estilo para textos comuns
+  static const TextStyle bodyLarge = TextStyle(
+    fontSize: 14,
+    color: Color.fromARGB(255, 102, 76, 175),
+  );
+
+  // Estilo para títulos no AppBar
+  static const TextStyle appBarTitle = TextStyle(
+    fontSize: 20,
+    fontWeight: FontWeight.bold,
+    color: AppColors.background,
+  );
+
+  // Estilo para botões
+  static const TextStyle button = TextStyle(
+    fontSize: 18,
+    fontWeight: FontWeight.bold,
+    color: AppColors.background,
+  );
+
+  // Estilo para textos de erro
+  static const TextStyle error = TextStyle(
+    fontSize: 14,
+    color: AppColors.error,
+  );
+
+  static const TextStyle fontManual = TextStyle(
+  fontFamily: 'Griffy', // Nome da fonte personalizada
+  fontSize: 40,
+  fontWeight: FontWeight.bold,
+  color: AppColors.textPrimary,
+);
+
+static TextStyle get googleFonts => GoogleFonts.pacifico(
+      fontSize: 40,
+      fontWeight: FontWeight.bold,
+      color: AppColors.textPrimary,
+    );
+}

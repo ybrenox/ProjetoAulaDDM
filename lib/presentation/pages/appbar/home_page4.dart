@@ -11,17 +11,13 @@ class HomePage extends StatelessWidget {
       backgroundColor: AppColors.colorScaffold,
       appBar: AppBar(
         backgroundColor: AppColors.colorAppbar,
-        title: const Text(
-          'MEU APP',
-          style: TextStyle(
-            color: Colors.white,
-            fontSize: 20,
-            fontWeight: FontWeight.bold,
-          ),
-        ),
+        title: const Text("Google Fonts"),
       ),
-      body: const Center(
-        child: Text('Olá, espero que esteja bem!', style: TextStyles.bodyLarge),
+      body: Center(
+        child: Text(
+          "Olá Flutter!",
+          style: TextStyles.googleFonts,
+        ),
       ),
     );
   }
