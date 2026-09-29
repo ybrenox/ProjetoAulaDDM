@@ -1,0 +1,56 @@
+import 'package:flutter/material.dart';
+
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: const Color.fromARGB(255, 129, 192, 245),
+
+      appBar: AppBar(
+        backgroundColor: Colors.blue,
+        title: const Text('MEU APP', style: TextStyle(color: Colors.white)),
+        iconTheme: const IconThemeData(color: Colors.white),
+      ),
+
+      body: Center(
+        child: Container(
+          width: 300,
+          height: 300,
+          color: Colors.black,
+
+          child: Align(
+            alignment: AlignmentDirectional.center,
+
+            child: Container(
+              width: 150,
+              height: 150,
+              color: Colors.red,
+
+              child: Align(
+                alignment: AlignmentDirectional.center,
+
+                child: Container(
+                  width: 75,
+                  height: 75,
+                  color: Colors.blue,
+
+                  child: Align(
+                    alignment: AlignmentDirectional.center,
+
+                    child: Container(
+                      width: 37,
+                      height: 37,
+                      color: Colors.yellow,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
